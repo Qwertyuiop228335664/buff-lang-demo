@@ -1,0 +1,8 @@
+struct Player
+    hp: int
+    speed: float
+end
+
+fn damage_player(p: Player*, amount: int)
+    p.hp = p.hp - amount
+end

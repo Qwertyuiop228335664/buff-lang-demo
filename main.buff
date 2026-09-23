@@ -1,0 +1,11 @@
+import "player.buff"
+import "<stdio.h>"
+
+fn main() -> int
+    let hero: Player* = spawn Player in game_arena
+    hero.hp = 100
+    
+    damage_player(hero, 25)
+    println("HP: %d", hero.hp)
+    return 0
+end
